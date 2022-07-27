@@ -1,3 +1,5 @@
+package com.example;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -11,5 +13,12 @@ public class Main {
         System.out.println(theDouble);
         System.out.println(theNumber);
         System.out.println(theLong);
+
+        //homework: function plus tax
+        double plusTax = getIva(55.5);
+        System.out.println("The final price with tax is: " + plusTax);
+    }
+    static double getIva(double price){
+        return (price * 0.21) + price;
     }
 }
