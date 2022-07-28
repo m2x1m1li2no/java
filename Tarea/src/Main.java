@@ -17,6 +17,14 @@ public class Main {
         //homework: function plus tax
         double plusTax = getIva(55.5);
         System.out.println("The final price with tax is: " + plusTax);
+        
+        
+        //homework 03: forEach
+        String[] weeks = {"monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"};
+        for (String week : weeks) {
+            System.out.println("day of the week: " + week);
+        }
+        
     }
     static double getIva(double price){
         return (price * 0.21) + price;
