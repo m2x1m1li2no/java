@@ -1,0 +1,15 @@
+Indica cuál es el problema de utilizar un Vector con la capacidad por defecto 
+si tuviésemos 1000 elementos para ser añadidos al mismo.
+----------+----------+----------+----------+----------+----------+----------+
+
+La capacidad por defecto del Vector es de 10, una vez utilizada esa capacidad se crea
+un nuevo array de 20, en dicho array de 20 se produce una operación de "copy / paste"
+donde se copia el primer array de 10 elementos y contínua llenando el nuevo array de 20
+con los datos que le hayamos dado.
+Esta operación de "re-size" o ampliación, se repetiria hasta poder llegar a los 
+1000 elementos que queremos añadir, siendo un costo computacional muy grande dado que 
+en cada ampliacón estaría duplicando el espacio en memoria.
+----------+----------+----------+----------+----------+----------+----------+
+Lo ideal es crear el vector del tamaño que voy a necesitar o bien del tamaño que más 
+se acerque a las necesidades de mi programa, también modificar la capacidad inicial y 
+la capacidad de incremento para tener un mayor control.
