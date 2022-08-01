@@ -3,6 +3,7 @@ package com.example;
 public class Main {
 
     public static void main(String[] args) {
+        //First exercise
         String theString = "the String";
         int theNumber = 5;
         double theDouble = 5.55;
@@ -14,12 +15,13 @@ public class Main {
         System.out.println(theNumber);
         System.out.println(theLong);
 
+        
         //homework: function plus tax
         double plusTax = getIva(55.5);
         System.out.println("The final price with tax is: " + plusTax);
         
         
-        //homework 03: forEach
+        //homework: forEach
         String[] weeks = {"monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"};
         for (String week : weeks) {
             System.out.println("day of the week: " + week);
