@@ -17,7 +17,7 @@ public class ThrowsMain {
             int result = number1 / number2;
             System.out.println("\nThe result is: " + result);
         } catch (ArithmeticException e) {
-            System.out.println("This can't be done.");
+            System.out.println("This can't be done -> " + e.getMessage());
         }
         finally {
             System.out.println("Demo de codigo");
